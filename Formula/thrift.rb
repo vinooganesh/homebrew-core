@@ -4,6 +4,7 @@ class Thrift < Formula
   homepage 'http://thrift.apache.org'
   head 'http://svn.apache.org/repos/asf/thrift/trunk'
   url 'http://www.apache.org/dyn/closer.cgi?path=thrift/0.7.0/thrift-0.7.0.tar.gz'
+  # md5 '7a57a480745eab3dd25e02f5d5cc3770'
 
   depends_on 'boost'
 
@@ -11,7 +12,7 @@ class Thrift < Formula
     # No reason for this step is known. On Lion at least the pkg.m4 doesn't
     # even exist. Turns out that it isn't needed on Lion either. Possibly it
     # isn't needed anymore at all but I can't test that.
-    cp "/usr/X11/share/aclocal/pkg.m4", "aclocal" if MACOS_VERSION < 10.7
+  #  cp "/usr/X11/share/aclocal/pkg.m4", "aclocal" if MACOS_VERSION < 10.7
 
     system "./bootstrap.sh" if version == 'HEAD'
 
