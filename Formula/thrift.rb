@@ -4,7 +4,6 @@ class Thrift < Formula
   homepage 'http://thrift.apache.org'
   head 'http://svn.apache.org/repos/asf/thrift/trunk'
   url 'http://www.apache.org/dyn/closer.cgi?path=thrift/0.7.0/thrift-0.7.0.tar.gz'
-  md5 '7a57a480745eab3dd25e02f5d5cc3770'
 
   depends_on 'boost'
 
